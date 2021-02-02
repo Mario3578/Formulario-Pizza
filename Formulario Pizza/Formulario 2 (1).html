@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Pizza</title>
+<link rel="stylesheet" type="text/css" href="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.css"/><script  type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cookieconsent.min.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/cookies/cauce_cookie.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-base.js"></script><script type="text/javascript" src="https://www3.gobiernodecanarias.org/educacion/cau_ce/estadisticasweb/scripts/piwik-eforma.js"></script></head>
+<body>
+    <h1>Restaurante</h1>
+    <h2>La Buena Pizza</h2>
+    <h3>Pedido de Pizza</h3>
+    <form action="">
+        <fieldset>
+            <legend>ingredientes</legend>
+
+            <ul>
+                <li>
+                    <input type="checkbox" id="Queso">
+                    <label for="Queso">Queso</label>
+
+                    <input type="checkbox" id="atun">
+                    <label for="atun">atun</label>
+
+                    <input type="checkbox" id="Pimiento">
+                    <label for="Pimiento">Pimiento</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="cebolla">
+                    <label for="atun">cebolla</label>
+
+                    <input type="checkbox" id="Gambas">
+                    <label for="Gambas">Gambas</label>
+
+                    <input type="checkbox" id="Salchichas">
+                    <label for="Salchichas">Salchichas</label>
+                </li>
+
+                <li>
+                    <label for="Otros">otros</label>
+                    <textarea name="" id="Otros" cols="30" rows="10"
+                        placeholder="indicar otrasindicar otros ingredientes u otras indicaciones para tu pizza">
+                    </textarea>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tamaño</legend>
+            <ul>
+                <li>
+                    <label for="pequenya">pequeña</label>
+                    <input type="radio" name="Tamaño" id="pequenya">
+                </li>
+                <li>
+                    <label for="mediana">mediana</label>
+                    <input type="radio" name="Tamaño" id="mediana">
+                </li>
+                <li>
+                    <label for="grande">grande</label>
+                    <input type="radio" name="grande" id="grande">
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>entrega</legend>
+            <ul>
+                <li>
+                    <label for="cliente">cliente</label>
+                    <textarea name="" id="cliente" cols="40" rows="1"></textarea>
+                    <input type="text" id="cliente" required
+                        minlength="5" maxlength="20">
+                </li>
+                
+                <li>
+                    <label for="direccion">direccion</label>
+                    <textarea name="" id="direccion" cols="30" rows="10"></textarea>
+                </li>
+                <li>
+                    <input type="time" id="Hora" min="21:00" max="00:00" required>
+                    <p>
+                        <label>Clave secreta para la entrega</label>
+                        <input type="text" name="clave" requerid pattern="">
+                    </p>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

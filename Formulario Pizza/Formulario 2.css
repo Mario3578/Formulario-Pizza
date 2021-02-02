@@ -1,0 +1,20 @@
+textarea[id="otros"] {
+    resize: vertical;
+}
+
+textarea[id="direccion"] {
+    resize: none;
+}
+
+input:required {
+    background-color:green;
+}
+
+input:invalid {
+    background-color:orange;
+}
+
+form:invalid input[type="submit"] {
+    background-color: red;
+    cursor: not-allowed;
+}
